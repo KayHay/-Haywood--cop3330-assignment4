@@ -5,7 +5,7 @@
  
  ** To Do List **
  
- public class ListExample {
+ public class ToDoList {
 
     public static void main(String[] args) {
         List<Model> models = new ArrayList<>();
