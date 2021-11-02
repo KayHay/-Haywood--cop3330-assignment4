@@ -1,0 +1,34 @@
+/*
+ *  UCF COP3330 Fall 2021 Assignment 4 Solution
+ *  Copyright 2021 Kaylah Haywood
+ */
+ 
+ ** To Do List **
+ 
+ public class ListExample {
+
+    public static void main(String[] args) {
+        List<Model> models = new ArrayList<>();
+
+        for(Model model : models) {
+            System.out.println(model.getItem());
+        }
+
+        for(int i = 0; i < models.size(); i++) {
+            System.out.println(models.get(i).getItem());
+        }
+    }
+}
+
+class Model {
+
+    private String item;
+
+    public String getItem() {
+        return item;
+    }
+
+    public void setItem(String item) {
+        this.name = item;
+    }
+}
