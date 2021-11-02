@@ -41,7 +41,7 @@ public static void main(String[] args) {
         choice = input.nextInt();
         
         if (choice == 1) {
-            System.out.println("Keep hitting enter after to do's, if you want to stop, type 'stop'.");
+            System.out.println("Continue to hit 'enter' after to do's, to stop, type 'stop'.");
             for (int i=count;i<MAX;i++) {
               list[i] = input.nextLine();
             if (list[i].equals("stop")) break;
