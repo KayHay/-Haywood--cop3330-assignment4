@@ -34,9 +34,9 @@ public static void main(String[] args) {
     while (choice != 3) {
 
         System.out.println();
-        System.out.println("Type 1 to add to the to do list.");
-        System.out.println("Type 2 to print the to do list.");
-        System.out.println("Type 3 to exit the program.");
+        System.out.println("Add to the to do list.");
+        System.out.println("Print the to do list.");
+        System.out.println("Exit the program.");
         System.out.print("Select an option: ");
         choice = input.nextInt();
         
