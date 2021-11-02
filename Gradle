@@ -1,0 +1,43 @@
+/*
+ *  UCF COP3330 Fall 2021 Assignment 4 Solution
+ *  Copyright 2021 Kaylah Haywood
+ */
+ 
+ ** To Do List **
+
+/*
+/.idea/
+/uml/
+/gradle/
+/src/
+/.gitignore
+/build.gradle
+/gradlew
+/gradlew.bat
+/settings.gradle
+*/
+
+
+File[] files = myDir.listFiles();
+UIHelper.displayText(this, R.id.textView1, files.toString());
+
+File dir= new File(android.os.Environment.getExternalStorageDirectory());
+walkdir(dir);
+
+ ArrayList<String> filepath= new ArrayList<String>();
+ public void walkdir(File dir) {
+ File listFile[] = dir.listFiles();
+
+      if (listFile != null) {
+          for (int i = 0; i < listFile.length; i++) {
+
+            if (listFile[i].isDirectory()) {
+                walkdir(listFile[i]);
+            } else {
+
+                filepath.add( listFile[i].getAbsolutePath());
+
+                   }
+            }  
+      }    
+}
