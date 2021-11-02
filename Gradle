@@ -3,4 +3,4 @@
  *  Copyright 2021 Kaylah Haywood
  */
  
- rootAssignment4.name = 'todo-list'
+rootProject.name = 'todo-list'
