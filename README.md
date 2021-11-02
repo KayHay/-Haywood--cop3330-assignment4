@@ -29,7 +29,8 @@ public static void main(String[] args) {
 
     String[] list = new String[MAX];
     int choice = 0;
-
+    int count = 0;
+    
     while (choice != 3) {
 
         System.out.println();
@@ -38,8 +39,7 @@ public static void main(String[] args) {
         System.out.println("Type 3 to exit the program.");
         System.out.print("Select an option: ");
         choice = input.nextInt();
-        int count = 0;
-
+        
         if (choice == 1) {
             System.out.println("Keep hitting enter after to do's, if you want to stop, type 'stop'.");
             for (int i=count;i<MAX;i++) {
@@ -57,5 +57,5 @@ public static void main(String[] args) {
 
     }
 
-}
+  }
 }
