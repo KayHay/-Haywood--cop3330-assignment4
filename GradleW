@@ -1,0 +1,30 @@
+/*
+ *  UCF COP3330 Fall 2021 Assignment 4 Solution
+ *  Copyright 2021 Kaylah Haywood
+ */
+ 
+ ** To Do List **
+
+List<String> listStrings = new ArrayList<String>();
+  listStrings.add("One");
+  listStrings.add("Two");
+  listStrings.add("Three");
+  listStrings.add("Four");
+System.out.println(listStrings);
+
+List<String> listStrings = new LinkedList<String>();
+  listStrings.add("Five");
+  listStrings.add("Six");
+  listStrings.add("Seven");
+  listStrings.add("Eight");
+System.out.println(listStrings);
+
+String element = listStrings.get(1);
+Number number = linkedNumbers.get(3);
+
+LinkedList<Number> numbers = new LinkedList<Number>();
+  Number first = numbers.getFirst();
+  Number last = numbers.getLast();
+  
+  listStrings.remove(2);
+  listStrings.remove("Two");
