@@ -5,7 +5,7 @@
  
  ** To Do List **
  
- public class ToDoList {
+ public class TodoList {
 
     public static void main(String[] args) {
         List<Model> models = new ArrayList<>();
@@ -29,6 +29,6 @@ class Model {
     }
 
     public void setItem(String item) {
-        this.name = item;
+        this.item = item;
     }
 }
