@@ -1,0 +1,28 @@
+/*
+ *  UCF COP3330 Fall 2021 Assignment 4 Solution
+ *  Copyright 2021 Kaylah Haywood
+ */
+ 
+ PlantUML
+ 
+ ** To Do List **
+ 
+ $('#list').on('click', '.complete-button', function(event) {
+  var item = $(event.target).parent()
+  var isItemCompleted = item.hasClass('completed')
+  var itemId = item.attr('data-id')
+
+  var updateRequest = $.ajax({
+    type: 'PUT',
+    url: "https://github.com/KayHay/" + itemId,
+    data: { completed: !isItemCompleted }
+  })
+
+  updateRequest.done(function(itemData) {
+    if (itemData.completed) {
+      item.addClass('completed')
+    } else {
+      item.removeClass('completed')
+    }
+  })
+})
